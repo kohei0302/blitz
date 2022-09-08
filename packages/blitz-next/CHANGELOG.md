@@ -1,5 +1,14 @@
 # @blitzjs/next
 
+## 2.0.0-beta.4
+
+### Patch Changes
+
+- 69fb2803: Allow setting static page properties (e.g. `getInitialProps`) on the App component
+- Updated dependencies [c213d521]
+- Updated dependencies [f6dac093]
+  - @blitzjs/rpc@2.0.0-beta.4
+
 ## 2.0.0-beta.3
 
 ### Patch Changes
