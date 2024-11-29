@@ -578,6 +578,7 @@ const setSessionCookie = (
       sameSite: global.sessionConfig.sameSite,
       domain: global.sessionConfig.domain,
       expires: expiresAt,
+      maxAge: Math.floor((expiresAt.getTime() - Date.now()) / 1000),
     }),
   )
 }
@@ -597,6 +598,7 @@ const setAnonymousSessionCookie = (
       sameSite: global.sessionConfig.sameSite,
       domain: global.sessionConfig.domain,
       expires: expiresAt,
+      maxAge: Math.floor((expiresAt.getTime() - Date.now()) / 1000),
     }),
   )
 }
@@ -617,6 +619,7 @@ const setCSRFCookie = (
       sameSite: global.sessionConfig.sameSite,
       domain: global.sessionConfig.domain,
       expires: expiresAt,
+      maxAge: Math.floor((expiresAt.getTime() - Date.now()) / 1000),
     }),
   )
 }
@@ -636,6 +639,7 @@ const setPublicDataCookie = (
       sameSite: global.sessionConfig.sameSite,
       domain: global.sessionConfig.domain,
       expires: expiresAt,
+      maxAge: Math.floor((expiresAt.getTime() - Date.now()) / 1000),
     }),
   )
 }
