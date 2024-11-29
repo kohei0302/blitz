@@ -15,10 +15,9 @@
     "test-watch": "vitest",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
-  "main": "./dist/index-server.cjs",
-  "module": "./dist/index-server.mjs",
-  "browser": "./dist/index-browser.mjs",
-  "types": "./dist/index-server.d.ts",
+  "main": "./src/index-server.ts",
+  "module": "./src/index-server.ts",
+  "browser": "./src/index-browser.tsx",
   "sideEffects": false,
   "license": "MIT",
   "files": [
